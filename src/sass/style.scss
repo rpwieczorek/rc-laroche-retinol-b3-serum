@@ -3,11 +3,11 @@
 /* Locator Web Light */
 @font-face {
   font-family: "LocatorWeb";
-  src: url("./fonts/LocatorWebLight/LocatorWebLight.eot");
-  src: url("./fonts/LocatorWebLight/LocatorWebLight.eot?#iefix")
+  src: url("../fonts/LocatorWebLight/LocatorWebLight.eot");
+  src: url("../fonts/LocatorWebLight/LocatorWebLight.eot?#iefix")
       format("embedded-opentype"),
-    url("./fonts/LocatorWebLight/LocatorWebLight.woff2") format("woff2"),
-    url("./fonts/LocatorWebLight/LocatorWebLight.woff") format("woff");
+    url("../fonts/LocatorWebLight/LocatorWebLight.woff2") format("woff2"),
+    url("../fonts/LocatorWebLight/LocatorWebLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
 }
@@ -15,11 +15,11 @@
 /* Locator Web Medium */
 @font-face {
   font-family: "LocatorWeb";
-  src: url("./fonts/LocatorWebMedium/LocatorWebMedium.eot");
-  src: url("./fonts/LocatorWebMedium/LocatorWebMedium.eot?#iefix")
+  src: url("../fonts/LocatorWebMedium/LocatorWebMedium.eot");
+  src: url("../fonts/LocatorWebMedium/LocatorWebMedium.eot?#iefix")
       format("embedded-opentype"),
-    url("./fonts/LocatorWebMedium/LocatorWebMedium.woff2") format("woff2"),
-    url("./fonts/LocatorWebMedium/LocatorWebMedium.woff") format("woff");
+    url("../fonts/LocatorWebMedium/LocatorWebMedium.woff2") format("woff2"),
+    url("../fonts/LocatorWebMedium/LocatorWebMedium.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -342,14 +342,18 @@ text-align: center;
       max-width: 148px;
       opacity: 1;
       transition: all 0.2s ease-in-out;
+      padding-bottom: 20px;
+      &--allWidth {
+        max-width: 607px;
+      }
     }
     &__image {
       position: relative;
     }
     &__label {
       @include text;
-      font-size: 15px;
-      padding: 4px 12px;
+      font-size: 14px;
+      padding: 4px 10px;
       background: rgba(255, 255, 255, 0.66);
       position: absolute;
       top: 24px;
@@ -368,9 +372,16 @@ text-align: center;
         position: relative;
         top: -8px;
       }
+      &--allWidth {
+        width: 200px;
+      }
     }
     &__img {
       @include img;
+      &--allWidth {
+        height: 148px;
+        object-fit: cover;
+      }
     }
     &__text {
       @include text;
@@ -382,7 +393,7 @@ text-align: center;
   .es-use {
     margin-bottom: 56px;
     &__wrapper {
-      background: #a3cdf3;
+      background: #c12735;
       padding: 24px 16px;
     }
     &__title {
@@ -432,9 +443,9 @@ text-align: center;
     }
     &__number {
       @include text;
-      color: #f39a1e;
+      color: #c12735;
       font-size: 156px;
-      font-weight: 400;
+      font-weight: 700;
       line-height: 0.75;
     }
     &__subtitle {
@@ -457,12 +468,12 @@ text-align: center;
       font-size: 15px;
       text-decoration: none;
       color: #fff;
-      background: #f39a1e;
+      background: #c12735;
       padding: 4px 16px;
-      border: 1px solid #f39a1e;
+      border: 1px solid #c12735;
       transition: all 0.3s ease;
       &:hover {
-        color: #f39a1e;
+        color: #000;
         background: #fff;
       }
     }
@@ -717,7 +728,7 @@ text-align: center;
         max-width: 25%;
         margin-bottom: 0;
         &--1 {
-          top: 7%;
+          top: 14%;
           right: 40px;
         }
         &--2 {
